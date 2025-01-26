@@ -64,5 +64,5 @@ Task 1- Minimalist Application Development / Docker / Kubernetes
 
 11. URL's for accessing DockerHub and GitHub-
     DockerHub- https://hub.docker.com/repository/docker/kajaldhobale/devops/general
-    GitHub-     
+    GitHub- https://github.com/Kajald-21/MyTimeService  
     
