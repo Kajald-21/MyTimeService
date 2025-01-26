@@ -1,11 +1,12 @@
 Task 1- Minimalist Application Development / Docker / Kubernetes
  
-1. I createad EC2 instance "SimpleTimeService" and using Vim editor I craeted vim service.py file.
-   command- Vim service.py
+1. I createad EC2 instance "MyTimeService" and using Vim editor I craeted vim service.py file.
+   Vim service.py
 
 2. Install docker using command-
+   yum docker install -y 
 
-3. Then created docker file using below steps-
+4. Then created Docker file using below steps-
    # Use an official Python runtime as a parent image
    FROM python:3.9-slim
  
@@ -27,3 +28,41 @@ Task 1- Minimalist Application Development / Docker / Kubernetes
  
  # Run the Flask application
   CMD ["flask", "run"]
+
+5. Commands to build a docker image using Dockerfile-
+   docker build -t my-time-service
+   
+7. To Check Dockerfile is created or not-
+    docker ps
+
+8. Push Image to Dockerhub-
+   docker push kajaldhobale/devops/servcie.py:latest
+   
+9.  To push service.py code to GitHub-
+    For clone the code from GitHub to VsCode-
+    git clone https://github.com/Kajald-21/MyTimeService
+
+    For checking the status-
+    git status
+
+    For adding file to current repository
+    git add .
+
+    For committing the code-
+    git commit -m "Service comitted"
+
+    For pushing the code to GitHub-
+    git push
+    
+10. For Test the Servcie-
+    command-
+    docker run -t -p 5000:5000 abck
+    
+    If you're testing locally, you can access:
+    http://127.0.0.1:5000 (if running locally on your machine).
+    http://172.17.0.2:5000 (inside the Docker network).
+
+11. URL's for accessing DockerHub and GitHub-
+    DockerHub- https://hub.docker.com/repository/docker/kajaldhobale/devops/general
+    GitHub-     
+    
