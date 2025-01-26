@@ -54,15 +54,19 @@ Task 1- Minimalist Application Development / Docker / Kubernetes
     For pushing the code to GitHub-
     git push
     
-10. For Test the Servcie-
-    command-
-    docker run -t -p 5000:5000 abck
+10. Download Image From DockerHub-
+    Commands for build and run the Container-
+     docker build -t my-time-service .
+     docker run -t my-time-service
+
+    For Test the Servcie-
+    docker run -t -p 5000:5000 my-time-service
     
     If you're testing locally, you can access:
     http://127.0.0.1:5000 (if running locally on your machine).
     http://172.17.0.2:5000 (inside the Docker network).
 
-11. URL's for accessing DockerHub and GitHub-
+12. URL's for accessing DockerHub and GitHub-
     DockerHub- https://hub.docker.com/repository/docker/kajaldhobale/devops/general
     GitHub- https://github.com/Kajald-21/MyTimeService  
     
